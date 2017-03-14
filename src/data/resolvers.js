@@ -12,7 +12,7 @@ const resolverMap = {
   },
   Mutation: {
     upvotePost(_, { postId }) {
-      const post = find(Posts, { id: postId });
+      const post = find(Posts, { id: parseInt(postId, 10) });
       if (!post) {
         throw new Error(`Couldn't find post with id ${postId}`);
       }
