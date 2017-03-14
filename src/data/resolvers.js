@@ -2,7 +2,7 @@ import {
   Posts,
   Authors
 } from './data';
-import { find } from 'lodash';
+import { find, filter } from 'lodash';
 
 const resolverMap = {
   Query: {
